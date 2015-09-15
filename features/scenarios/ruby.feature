@@ -1,6 +1,30 @@
 Feature: Ruby home page
 
-  Scenario: 1 I check the header links
+  Scenario Outline: 1 I check the header links
     Given I visit the Ruby home page
-    When I click documentation header
-    Then I am on the documentation page
+    When I click <page> header
+    Then I am on the <page> page
+  Examples:
+    | page          |
+	| downloads     |
+	| documentation |
+	| libraries     |
+	| community     |
+	| news          |
+	| security      |
+	| about ruby    |
+
+  Scenario Outline: 2 I check the footer links
+    Given I visit the Ruby home page
+    When I click <page> footer
+    Then I am on the <page> page
+  Examples:
+    | page          |
+	| downloads     |
+	| documentation |
+	| libraries     |
+	| community     |
+	| news          |
+	| security      |
+	| about ruby    |
+	

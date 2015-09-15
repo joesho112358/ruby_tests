@@ -1,3 +1,5 @@
+#put a_ in the name so it would be loaded before other pages
+#otherwise you need a require_relative in the files before to include
 module Ruby
   module Footer
     include PageObject
