@@ -11,7 +11,7 @@ Given /^I can see a ruby download link$/ do
     page.browser.wait_until {
       page.results?
     }
-    fail 'The results did not include Ruby page link' unless page.ruby_home?
+    fail 'The results did not include Ruby page link' unless page.ruby_home? && page.ruby_home_element.text.include?("Ruby")
   end
 end
 

@@ -6,13 +6,13 @@ Feature: Ruby home page
     Then I am on the <page> page
   Examples:
     | page          |
-	| downloads     |
-	| documentation |
-	| libraries     |
-	| community     |
-	| news          |
-	| security      |
-	| about ruby    |
+		| downloads     |
+		| documentation |
+		| libraries     |
+		| community     |
+		| news          |
+		| security      |
+		| about ruby    |
 
   Scenario Outline: 2 I check the footer links
     Given I visit the Ruby home page
@@ -20,11 +20,11 @@ Feature: Ruby home page
     Then I am on the <page> page
   Examples:
     | page          |
-	| downloads     |
-	| documentation |
-	| libraries     |
-	| community     |
-	| news          |
-	| security      |
-	| about ruby    |
+		| downloads     |
+		| documentation |
+		| libraries     |
+		| community     |
+		| news          |
+		| security      |
+		| about ruby    |
 	

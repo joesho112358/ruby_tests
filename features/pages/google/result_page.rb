@@ -2,8 +2,9 @@ module Google
   class ResultPage
     include PageObject
   
-    link :ruby_home, text: 'Ruby Programming Language'
-  
-    ordered_list :results, id: 'rso'
+    div :results, id: 'rso'
+    
+    link(:ruby_home) { results_element.link }
+
   end
 end
